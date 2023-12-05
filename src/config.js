@@ -2,7 +2,7 @@
 export default {
     clientId: '1227822103444956',
     clientSecret: 'rnAWKnEaAOYUGDJIdwoAlbZ1WmQcHk9X',
-    redirectUri: 'https://localhost:3000/auth/callback',
+    redirectUri: 'https://juliback.netlify.app/auth/callback',
     token: null,
-    port: 3000,
+    port: 3030,
   };

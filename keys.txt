@@ -4,7 +4,7 @@ App ID
 Client Secret 
 rnAWKnEaAOYUGDJIdwoAlbZ1WmQcHk9X
 
-https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=1227822103444956&redirect_uri=https://localhost:3000
+https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=1227822103444956&redirect_uri=https://juliback.netlify.app/auth/callback
 
 Code
 TG-656a6fa30e785800016e7af7-674717908
@@ -36,3 +36,13 @@ para pasarlo a thunder client:
 }
 
 ////////////////////////////////////////////////////
+
+JULI:
+// config.js
+export default {
+    clientId: '7674262769827791',
+    clientSecret: 'SL6i5nWo3WUwTBwGMwcA3pdRPWpCb65A',
+    redirectUri: 'https://juliback.netlify.app/auth/callback',
+    token: null,
+    port: 3000,
+  };
