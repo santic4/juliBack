@@ -1,0 +1,38 @@
+App ID
+1227822103444956
+
+Client Secret 
+rnAWKnEaAOYUGDJIdwoAlbZ1WmQcHk9X
+
+https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=1227822103444956&redirect_uri=https://localhost:3000
+
+Code
+TG-656a6fa30e785800016e7af7-674717908
+
+////////////////////////////////////////////////////
+
+Para cambiar un code por un access token
+
+curl -X POST \
+-H 'accept: application/json' \
+-H 'content-type: application/x-www-form-urlencoded' \
+'https://api.mercadolibre.com/oauth/token' \
+-d 'grant_type=authorization_code' \
+-d 'client_id=$APP_ID' \
+-d 'client_secret=$SECRET_KEY' \
+-d 'code=$SERVER_GENERATED_AUTHORIZATION_CODE' \
+-d 'redirect_uri=$REDIRECT_URI' \
+-d 'code_verifier=$CODE_VERIFIER' 
+
+para pasarlo a thunder client:
+
+{
+  "grant_type":"authorization_code",
+"client_id":"1227822103444956",
+"client_secret":"rnAWKnEaAOYUGDJIdwoAlbZ1WmQcHk9X",
+"code":"TG-656a72ff7b89e800014ada20-674717908",
+"redirect_uri":"https://localhost:3000"
+
+}
+
+////////////////////////////////////////////////////
